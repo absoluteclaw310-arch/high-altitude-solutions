@@ -9,7 +9,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero.jpg"
-            alt="High Altitude Solutions bucket truck in action"
+            alt="Bucket truck with operator reaching high up"
             fill
             className="object-cover opacity-30"
             priority
@@ -19,21 +19,24 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-brand-sky drop-shadow-lg">
             High Altitude Solutions
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Professional bucket truck services for tree trimming, signage installation, & exterior maintenance
+          <p className="text-xl md:text-2xl mb-4 text-gray-200">
+            Bucket Truck & Operator for Hire
+          </p>
+          <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
+            Got work that is too high to reach? We bring the truck, the operator, and the lift so you can get your chores done. No ladder needed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="/services" 
               className="px-8 py-4 bg-brand-accent text-brand-dark font-bold rounded-lg hover:bg-white transition-colors"
             >
-              Our Services
+              What We Do
             </Link>
             <Link 
               href="/contact" 
               className="px-8 py-4 border-2 border-brand-sky text-brand-sky font-bold rounded-lg hover:bg-brand-sky hover:text-white transition-colors"
             >
-              Get a Quote
+              Hire Us
             </Link>
           </div>
         </div>
@@ -42,20 +45,23 @@ export default function Home() {
       {/* Services Preview */}
       <section className="py-20 px-4 bg-brand-blue">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-brand-accent">What We Do</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-brand-accent">Got Heights? We Got You.</h2>
+          <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
+            When a ladder is not enough, our bucket truck and operator get you there. You tell us what needs doing — we bring the reach.
+          </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="rounded-lg bg-brand-dark border border-brand-sky/20 overflow-hidden">
               <div className="relative h-48">
                 <Image
                   src="/images/tree-trimming.jpg"
-                  alt="Tree trimming service"
+                  alt="Tree trimming with bucket truck"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-brand-sky">Tree Trimming</h3>
-                <p className="text-gray-300">Professional tree trimming and pruning at height. Safe, efficient, and thorough.</p>
+                <p className="text-gray-300">Branches getting out of hand? We trim what you cannot reach. We do not cut trees down — we trim them up.</p>
               </div>
             </div>
 
@@ -63,14 +69,14 @@ export default function Home() {
               <div className="relative h-48">
                 <Image
                   src="/images/signage.jpg"
-                  alt="Signage installation service"
+                  alt="Sign installation with bucket truck"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-brand-sky">Signage Installation</h3>
-                <p className="text-gray-300">Storefront, pole, and building signage installed safely at any height.</p>
+                <h3 className="text-xl font-bold mb-2 text-brand-sky">Signage Work</h3>
+                <p className="text-gray-300">Install, repair, remove, or upgrade signs. We are a sign company with a bucket truck — height is not a problem.</p>
               </div>
             </div>
 
@@ -78,14 +84,14 @@ export default function Home() {
               <div className="relative h-48">
                 <Image
                   src="/images/maintenance.jpg"
-                  alt="Exterior maintenance service"
+                  alt="Exterior maintenance with bucket truck"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-brand-sky">Exterior Maintenance</h3>
-                <p className="text-gray-300">Gutter cleaning, facade washing, and hard-to-reach exterior upkeep.</p>
+                <h3 className="text-xl font-bold mb-2 text-brand-sky">Yearly Maintenance</h3>
+                <p className="text-gray-300">Gutters, facades, windows, roofs — all the yearly upkeep you keep putting off because it is too high. We handle it.</p>
               </div>
             </div>
           </div>
@@ -97,20 +103,20 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-brand-accent">Serving Schenectady & Capital Region</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Reliable, insured, and ready to reach what others cannot. Let us discuss your next project.
+            Residential, commercial, or industrial — if you need height, we are the call to make. Truck and operator ready when you are.
           </p>
           <Link 
             href="/contact"
             className="inline-block px-8 py-4 bg-brand-sky text-white font-bold rounded-lg hover:bg-white hover:text-brand-dark transition-colors"
           >
-            Schedule Your Service
+            Schedule Your Job
           </Link>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-brand-blue text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
+        <p>\u0026copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
         <p className="mt-2">518-400-2009 | Schenectady, NY</p>
         <div className="flex justify-center gap-6 mt-4">
           <Link href="/services" className="hover:text-brand-sky">Services</Link>

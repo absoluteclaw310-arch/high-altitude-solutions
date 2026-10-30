@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 
-// Replace this with your actual Google Apps Script Web App URL after deployment
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxrCyb4A2mhVkhf1rP94IIJ8yHSDhJx49vEdhsB99yNY8geYIJexLG2ZwiZn7iJK0g/exec';
 
 export default function ContactPage() {
@@ -35,12 +34,11 @@ export default function ContactPage() {
         headers: {
           'Content-Type': 'application/json',
         },
-        mode: 'no-cors' // Required for Google Apps Script
+        mode: 'no-cors'
       });
 
-      // With no-cors, we can't read the response, so we assume success
       setStatus('success');
-      setStatusMessage('Thank you! We will contact you shortly.');
+      setStatusMessage('Thank you! We will contact you shortly to discuss your job.');
       setFormData({
         name: '',
         email: '',
@@ -50,7 +48,7 @@ export default function ContactPage() {
       });
     } catch (error) {
       setStatus('error');
-      setStatusMessage('Something went wrong. Please call or email us directly.');
+      setStatusMessage('Something went wrong. Please call 518-400-2009 directly.');
     }
   };
 
@@ -70,9 +68,9 @@ export default function ContactPage() {
 
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-brand-accent">Contact Us</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-brand-accent">Hire the Truck</h1>
           <p className="text-center text-gray-300 mb-12">
-            Ready to get started? Fill out the form or reach out directly.
+            Tell us what you need done. We will bring the bucket truck and operator.
           </p>
 
           {status === 'success' && (
@@ -99,7 +97,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-white mb-1">Email</h3>
+                  <h3 className="font-bold text-white mb-1">Business</h3>
                   <p className="text-gray-300">Sign Bandits</p>
                 </div>
 
@@ -159,7 +157,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-bold mb-2" htmlFor="service">Service Needed</label>
+                <label className="block text-sm font-bold mb-2" htmlFor="service">What Do You Need Done?</label>
                 <select
                   id="service"
                   name="service"
@@ -167,16 +165,16 @@ export default function ContactPage() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg bg-brand-dark border border-brand-sky/30 text-white focus:border-brand-sky focus:outline-none"
                 >
-                  <option value="">Select a service...</option>
+                  <option value="">Select a job type...</option>
                   <option value="tree-trimming">Tree Trimming</option>
-                  <option value="signage">Signage Installation</option>
-                  <option value="maintenance">Exterior Maintenance</option>
-                  <option value="custom">Custom Project</option>
+                  <option value="signage">Signage Work (Install/Repair/Remove)</option>
+                  <option value="maintenance">Yearly Exterior Maintenance</option>
+                  <option value="custom">Custom Job</option>
                 </select>
               </div>
 
               <div>
-                <label className="block text-sm font-bold mb-2" htmlFor="message">Message *</label>
+                <label className="block text-sm font-bold mb-2" htmlFor="message">Tell Us About the Job *</label>
                 <textarea
                   id="message"
                   name="message"
@@ -184,7 +182,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg bg-brand-dark border border-brand-sky/30 text-white focus:border-brand-sky focus:outline-none"
-                  placeholder="Tell us about your project..."
+                  placeholder="What do you need done? How high? Any details?"
                   required
                 ></textarea>
               </div>
@@ -194,7 +192,7 @@ export default function ContactPage() {
                 disabled={status === 'submitting'}
                 className="w-full px-8 py-4 bg-brand-accent text-brand-dark font-bold rounded-lg hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {status === 'submitting' ? 'Sending...' : 'Send Message'}
+                {status === 'submitting' ? 'Sending...' : 'Request the Truck'}
               </button>
             </form>
           </div>
@@ -202,7 +200,8 @@ export default function ContactPage() {
       </section>
 
       <footer className="py-8 px-4 border-t border-brand-blue text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
+        <p>\u0026copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
+        <p className="mt-2">518-400-2009 | Schenectady, NY</p>
       </footer>
     </div>
   );

@@ -5,26 +5,26 @@ export default function ServicesPage() {
   const services = [
     {
       image: "/images/tree-trimming.jpg",
-      title: "Tree Trimming & Pruning",
-      description: "Professional arborist services at height. We handle overgrown branches, deadwood removal, and precision pruning that keeps your trees healthy and your property safe.",
-      features: ["Dead branch removal", "Canopy shaping", "Storm damage cleanup", "Seasonal maintenance"]
+      title: "Tree Trimming",
+      description: "Overgrown branches blocking your view or threatening your roof? We bring the bucket truck and operator — you show us what needs trimming. We do not cut trees down; we clean them up.",
+      features: ["High branch trimming", "Deadwood removal", "Canopy shaping", "Storm damage cleanup"]
     },
     {
       image: "/images/signage.jpg",
-      title: "Signage Installation",
-      description: "From storefront awnings to tall pole signs, we install and repair signage safely at any height. We work with businesses, property managers, and sign shops.",
-      features: ["Storefront signs", "Pole/pylon signs", "Banner installation", "Sign repair & removal"]
+      title: "Signage Install, Repair \u0026 Removal",
+      description: "We are a sign company with a bucket truck. Whether you need a new storefront sign, a pole sign repaired, or an old sign taken down, we handle the height so you do not have to.",
+      features: ["New sign installation", "Pole sign repair", "Banner hanging", "Sign removal \u0026 upgrades"]
     },
     {
       image: "/images/maintenance.jpg",
-      title: "Exterior Building Maintenance",
-      description: "Gutter cleaning, facade washing, window cleaning, and other hard-to-reach exterior upkeep for commercial and residential properties.",
-      features: ["Gutter cleaning", "Facade/power washing", "Window cleaning", "Roof inspection"]
+      title: "Yearly Exterior Maintenance",
+      description: "Those gutters and facades are not going to clean themselves. We help homeowners and businesses knock out the yearly maintenance that is just too high to reach.",
+      features: ["Gutter cleaning", "Facade washing", "Window cleaning", "Roofline inspection"]
     },
     {
       image: "/images/hero.jpg",
-      title: "Custom Projects",
-      description: "Have something unique? Holiday lighting installation, aerial photography platforms, event rigging — if it needs height, we can help.",
+      title: "Custom Jobs",
+      description: "Got something weird? Holiday lights, aerial photography, event rigging — if you need height and a steady hand, our truck and operator are ready. You rent the lift, we bring the reach.",
       features: ["Holiday lighting", "Aerial access", "Event support", "Consultation"]
     }
   ];
@@ -47,9 +47,9 @@ export default function ServicesPage() {
       {/* Services Section */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-brand-accent">Our Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-brand-accent">Hire the Truck, Get the Height</h1>
           <p className="text-center text-gray-300 mb-16 max-w-2xl mx-auto">
-            Professional bucket truck services for residential, commercial, and industrial needs throughout the Capital Region.
+            You have the job. We have the lift. Our bucket truck and operator come to you so you can get your high-up work done without breaking out the ladder.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -84,20 +84,20 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="py-16 px-4 bg-brand-blue text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 text-white">Ready to get started?</h2>
-          <p className="text-gray-300 mb-8">Contact us for a free estimate on your next project.</p>
+          <h2 className="text-3xl font-bold mb-4 text-white">Ready to get up there?</h2>
+          <p className="text-gray-300 mb-8">Tell us what you need done. We will tell you when we can be there with the truck.</p>
           <Link 
             href="/contact"
             className="inline-block px-8 py-4 bg-brand-accent text-brand-dark font-bold rounded-lg hover:bg-white transition-colors"
           >
-            Request a Quote
+            Request the Truck
           </Link>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-brand-blue text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
+        <p>\u0026copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
         <p className="mt-2">518-400-2009 | Schenectady, NY</p>
       </footer>
     </div>
