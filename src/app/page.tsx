@@ -9,7 +9,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero.jpg"
+            src="/images/bucket-truck-hero.jpg"
             alt="High Altitude Solutions bucket truck with extended boom"
             fill
             className="object-cover"
@@ -80,7 +80,7 @@ export default function Home() {
             <div className="service-card rounded-lg bg-brand-dark border border-brand-sky/20 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/images/tree-trimming.jpg"
+                  src="/images/bucket-truck-tree-trimming.jpg"
                   alt="Tree trimming with bucket truck"
                   fill
                   className="object-cover transition-transform duration-500 hover:scale-110"
@@ -96,7 +96,7 @@ export default function Home() {
             <div className="service-card rounded-lg bg-brand-dark border border-brand-sky/20 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/images/signage.jpg"
+                  src="/images/bucket-truck-signage.jpg"
                   alt="Sign installation with bucket truck"
                   fill
                   className="object-cover transition-transform duration-500 hover:scale-110"
@@ -112,7 +112,7 @@ export default function Home() {
             <div className="service-card rounded-lg bg-brand-dark border border-brand-sky/20 overflow-hidden">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="/images/maintenance.jpg"
+                  src="/images/bucket-truck-maintenance.jpg"
                   alt="Exterior maintenance with bucket truck"
                   fill
                   className="object-cover transition-transform duration-500 hover:scale-110"
