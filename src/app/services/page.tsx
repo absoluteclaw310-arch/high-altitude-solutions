@@ -6,7 +6,7 @@ export default function ServicesPage() {
     {
       image: "/images/tree-trimming.jpg",
       title: "Tree Trimming",
-      description: "Overgrown branches blocking your view or threatening your roof? We bring the bucket truck and operator — you show us what needs trimming. We do not cut trees down; we clean them up.",
+      description: "Overgrown branches blocking your view or threatening your roof? We allow you to trim what you cannot reach. We do not cut trees down; we assist you to clean them up.",
       features: ["High branch trimming", "Deadwood removal", "Canopy shaping", "Storm damage cleanup"]
     },
     {
@@ -49,7 +49,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-brand-accent">Hire the Truck, Get the Height</h1>
           <p className="text-center text-gray-300 mb-16 max-w-2xl mx-auto">
-            You have the job. We have the lift. Our bucket truck and operator come to you so you can get your high-up work done without breaking out the ladder.
+            You have the skills and the motivation — you just lack the reach. Our bucket truck and operator come to you so you can finally get your high-up work done.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">

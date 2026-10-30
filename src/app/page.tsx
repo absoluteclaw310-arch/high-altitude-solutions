@@ -23,7 +23,7 @@ export default function Home() {
             Bucket Truck & Operator for Hire
           </p>
           <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto">
-            Got work that is too high to reach? We bring the truck, the operator, and the lift so you can get your chores done. No ladder needed.
+            You have got work that needs doing, but it is too high to reach. We bring the bucket truck and operator so you can finally get it done. Your project, your way — with the reach you need.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
@@ -47,7 +47,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-brand-accent">Got Heights? We Got You.</h2>
           <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
-            When a ladder is not enough, our bucket truck and operator get you there. You tell us what needs doing — we bring the reach.
+            You have the skills and the motivation. What you do not have is the reach. Hire our bucket truck and operator — we get you to the height so you can do the work yourself.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="rounded-lg bg-brand-dark border border-brand-sky/20 overflow-hidden">
@@ -61,7 +61,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-brand-sky">Tree Trimming</h3>
-                <p className="text-gray-300">Branches getting out of hand? We trim what you cannot reach. We do not cut trees down — we trim them up.</p>
+                <p className="text-gray-300">Branches getting out of hand? We allow you to trim what you cannot reach. We do not cut trees down — we help you trim them up.</p>
               </div>
             </div>
 
@@ -91,7 +91,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-brand-sky">Yearly Maintenance</h3>
-                <p className="text-gray-300">Gutters, facades, windows, roofs — all the yearly upkeep you keep putting off because it is too high. We handle it.</p>
+                <p className="text-gray-300">Gutters, facades, windows, roofs — all the yearly upkeep you have been putting off because it is too high. We give you the reach to finally knock it out.</p>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-brand-accent">Serving Schenectady & Capital Region</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Residential, commercial, or industrial — if you need height, we are the call to make. Truck and operator ready when you are.
+            Homeowner with a to-do list? Business with a sign project? Whatever you need to reach, we are here to make it possible. Truck and operator ready when you are.
           </p>
           <Link 
             href="/contact"
