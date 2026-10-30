@@ -5,7 +5,7 @@ export default function ServicesPage() {
   const services = [
     {
       image: "/images/tree-trimming.jpg",
-      title: "Tree Trimming \u0026 Pruning",
+      title: "Tree Trimming & Pruning",
       description: "Professional arborist services at height. We handle overgrown branches, deadwood removal, and precision pruning that keeps your trees healthy and your property safe.",
       features: ["Dead branch removal", "Canopy shaping", "Storm damage cleanup", "Seasonal maintenance"]
     },
@@ -13,7 +13,7 @@ export default function ServicesPage() {
       image: "/images/signage.jpg",
       title: "Signage Installation",
       description: "From storefront awnings to tall pole signs, we install and repair signage safely at any height. We work with businesses, property managers, and sign shops.",
-      features: ["Storefront signs", "Pole/pylon signs", "Banner installation", "Sign repair \u0026 removal"]
+      features: ["Storefront signs", "Pole/pylon signs", "Banner installation", "Sign repair & removal"]
     },
     {
       image: "/images/maintenance.jpg",
@@ -97,7 +97,7 @@ export default function ServicesPage() {
 
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-brand-blue text-center text-gray-400">
-        <p>\u0026copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
         <p className="mt-2">518-400-2009 | Schenectady, NY</p>
       </footer>
     </div>

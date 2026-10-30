@@ -202,7 +202,7 @@ export default function ContactPage() {
       </section>
 
       <footer className="py-8 px-4 border-t border-brand-blue text-center text-gray-400">
-        <p>\u0026copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
       </footer>
     </div>
   );

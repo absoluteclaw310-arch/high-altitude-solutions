@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function WhyUsPage() {
   const reasons = [
     {
-      title: "Insured \u0026 Licensed",
+      title: "Insured & Licensed",
       description: "Full liability insurance and proper licensing for your peace of mind. We carry documentation on every job."
     },
     {
-      title: "Local \u0026 Responsive",
+      title: "Local & Responsive",
       description: "Based in Schenectady, we serve the entire Capital Region with quick response times and flexible scheduling."
     },
     {
@@ -20,11 +20,11 @@ export default function WhyUsPage() {
     },
     {
       title: "Equipment Ready",
-      description: "Our bucket truck reaches heights that ladders can\u0027t. Properly maintained equipment means reliable service."
+      description: "Our bucket truck reaches heights that ladders can\'t. Properly maintained equipment means reliable service."
     },
     {
       title: "Satisfaction Guaranteed",
-      description: "We don\u0027t leave until the job is done right. Your property is treated with respect — cleanup included."
+      description: "We don\'t leave until the job is done right. Your property is treated with respect — cleanup included."
     }
   ];
 
@@ -74,7 +74,7 @@ export default function WhyUsPage() {
       </section>
 
       <footer className="py-8 px-4 border-t border-brand-blue text-center text-gray-400">
-        <p>\u0026copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
       </footer>
     </div>
   );

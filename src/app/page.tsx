@@ -20,7 +20,7 @@ export default function Home() {
             High Altitude Solutions
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
-            Professional bucket truck services for tree trimming, signage installation, \u0026 exterior maintenance
+            Professional bucket truck services for tree trimming, signage installation, & exterior maintenance
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
@@ -95,9 +95,9 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 px-4 text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-brand-accent">Serving Schenectady \u0026 Capital Region</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-brand-accent">Serving Schenectady & Capital Region</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Reliable, insured, and ready to reach what others can\u0027t. Let\u0027s discuss your next project.
+            Reliable, insured, and ready to reach what others cannot. Let us discuss your next project.
           </p>
           <Link 
             href="/contact"
@@ -110,7 +110,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-brand-blue text-center text-gray-400">
-        <p>\u0026copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
         <p className="mt-2">518-400-2009 | Schenectady, NY</p>
         <div className="flex justify-center gap-6 mt-4">
           <Link href="/services" className="hover:text-brand-sky">Services</Link>
