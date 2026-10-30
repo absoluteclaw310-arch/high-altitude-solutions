@@ -116,7 +116,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-brand-blue text-center text-gray-400">
-        <p>\u0026copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
         <p className="mt-2">518-400-2009 | Schenectady, NY</p>
         <div className="flex justify-center gap-6 mt-4">
           <Link href="/services" className="hover:text-brand-sky">Services</Link>
