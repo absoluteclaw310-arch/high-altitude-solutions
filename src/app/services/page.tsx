@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function ServicesPage() {
   const services = [
     {
-      image: "/images/tree-trimming.jpg",
+      image: "/images/service-tree-trimming.jpg",
       title: "Tree Trimming",
       description: "Overgrown branches blocking your view or threatening your roof? We allow you to trim what you cannot reach. We do not cut trees down; we assist you to clean them up.",
       features: ["High branch trimming", "Deadwood removal", "Canopy shaping", "Storm damage cleanup"]
@@ -22,7 +22,7 @@ export default function ServicesPage() {
       features: ["Gutter cleaning", "Facade washing", "Window cleaning", "Roofline inspection"]
     },
     {
-      image: "/images/hero.jpg",
+      image: "/images/service-custom.jpg",
       title: "Custom Jobs",
       description: "Got something weird? Holiday lights, aerial photography, event rigging — if you need height and a steady hand, our truck and operator are ready. You rent the lift, we bring the reach.",
       features: ["Holiday lighting", "Aerial access", "Event support", "Consultation"]
@@ -97,7 +97,7 @@ export default function ServicesPage() {
 
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-brand-blue text-center text-gray-400">
-        <p>0026copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
+        <p>\u0026copy; {new Date().getFullYear()} High Altitude Solutions. All rights reserved.</p>
         <p className="mt-2">518-400-2009 | Schenectady, NY</p>
       </footer>
     </div>
