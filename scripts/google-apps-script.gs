@@ -20,6 +20,7 @@
 // Configuration
 const SHEET_NAME = 'Contact Submissions';
 const SPREADSHEET_ID = ''; // Leave empty to auto-create, or paste your existing sheet ID
+const EMAIL_RECIPIENT = 'nabi@thesignbandits.com'; // CHANGE THIS TO YOUR EMAIL
 
 /**
  * Main entry point for POST requests
@@ -43,6 +44,9 @@ function doPost(e) {
     
     // Append the submission
     appendRow(sheet, data);
+    
+    // Send email notification
+    sendEmailNotification(data);
     
     // Return success
     return jsonResponse({
@@ -146,6 +150,41 @@ function appendRow(sheet, data) {
   ];
   
   sheet.appendRow(row);
+}
+
+/**
+ * Send email notification for new submission
+ */
+function sendEmailNotification(data) {
+  try {
+    const subject = 'New High Altitude Solutions Inquiry';
+    
+    const body = `
+New contact form submission:
+
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone || "Not provided"}
+Service: ${data.service || "Not specified"}
+Message: ${data.message}
+
+Submitted at: ${new Date().toLocaleString()}
+
+---
+High Altitude Solutions Contact Form
+    `;
+    
+    MailApp.sendEmail({
+      to: EMAIL_RECIPIENT,
+      subject: subject,
+      body: body,
+      name: 'High Altitude Solutions Website'
+    });
+    
+    console.log('Email notification sent to:', EMAIL_RECIPIENT);
+  } catch (error) {
+    console.error('Error sending email:', error);
+  }
 }
 
 /**
